@@ -8,7 +8,7 @@ const NumbersList: React.FunctionComponent = () => {
 
   return useObserver(() => {
     return (
-      <ul>
+      <ul className="Numbers-list">
         {numbersStore.numbers.map((value, index) => (
           <li key={index}>{value}</li>
         ))}
